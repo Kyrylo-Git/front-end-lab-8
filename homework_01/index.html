@@ -13,6 +13,157 @@
       <div id="container">
         <div id="content" role="main">
           <!-- TODO: Content goes here -->
+          <header>
+
+            <a href="http://www.epam.com/">
+              <img src="EPAM_logo.svg" alt="logo">
+            </a>  
+
+            <nav>
+              <a href="#"><strong>HTML</strong></a>
+              <a href="#"><strong>List</strong></a>
+              <a href="#"><strong>Table</strong></a>
+              <a href="#"><strong>Text formats</strong></a>
+              <a href="#"><strong>Blockquotes</strong></a>
+            </nav>
+
+            <hr><h1><b>HTML Elements</b></h1><hr>
+
+          </header>
+          
+          <main>
+
+            <section>
+              <h2>Ordered List</h2>
+
+              <ul>
+                <li><h1>Heading 1</h1></li>
+                <ul>
+                  <li><h2>Heading 2</h2></li>
+                  <ul>
+                    <li><h3>Heading 3</h3></li>
+                  </ul>
+                </ul>
+              </ul>
+
+              <ol>
+                <li><h4>Heading 4</h4></li>
+                <ol type="A">
+                  <li><h5>Heading 5<h5></li>
+                  <ol type="i">
+                    <li><h6>Heading 6</h6></li>
+                  </ol>
+                </ol>
+              </ol>
+
+              <h3>Definition List</h3>
+
+              <dl>
+                <dt>defines terms 1</dt>
+                <dd>description 1</dd>
+              </dl>
+              <dl>
+                <dt>defines terms 2</dt>
+                <dd>description 2</dd>
+              </dl>
+
+              <h2>Details</h2>
+
+              <details open="open">
+                <summary>Even more details open</summary>
+                <p>Here are even more details about the details.</p>
+              </details>
+              <details>
+                <summary>Even more details open</summary>
+                <p>Here are even more details about the details.</p>
+              </details>
+              <hr>
+            </section>
+
+
+            <section>
+              <h2>Table</h2>
+              
+              <table>
+                <thead>
+                  <tr>
+                    <th>Elements</th>
+                    <th>Elements</th>
+                    <th>Elements</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>strong</strong></td>
+                    <td>H<sub>2</sub>O</td>
+                    <td><a href="#">test link</a></td>
+                  </tr>
+                  <tr>
+                      <td><i>Italic</i></td>
+                      <td><u>Underline</u></td>
+                      <td><del>delete</del></td>
+                  </tr>
+                  <tr>
+                      <td><abbr>Abbreviation</abbr></td>
+                      <td>5<sup>3</sup>=125</td>
+                      <td><mark>inserted</mark></td>
+                  </tr>
+                </tbody>  
+              </table>
+              <hr>
+            </section>
+            
+            <section>
+              <h2>Text Formats</h2>
+
+              <p>Article Text</p>
+              <article>
+                <header>
+                  <h1>Article title</h1>
+                </header>
+                <p>Article description</p>
+              </article>
+
+              <h3>Preformatted Text</h3>
+
+              <pre>Text 
+  in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+              </pre>
+
+              <h3>Code</h3>
+
+             <pre>
+               <code>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+               </code>
+             </pre>
+             <hr> 
+            </section>
+
+            <section>
+              <h2>Blockquotes</h2>
+              <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+              <blockquote>
+                  Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+                  Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
+                  <p><a href="#">Steve Jobs</a></p>            
+              </blockquote>
+            </section>
+
+          </main>
+
+          <footer>
+              <span>Copyright Epam Systems</span>
+          </footer>
         </div>
       </div>
     </div>
