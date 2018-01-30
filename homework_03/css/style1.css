@@ -1,0 +1,91 @@
+body {
+  background: #dcbb9a; }
+  body h1 {
+    color: #893c00;
+    text-transform: none;
+    text-align: center; }
+  body h2 {
+    color: #893c00; }
+  body a {
+    color: #3d70a1; }
+  body table {
+    border-collapse: collapse;
+    background: #ffffff;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 50px; }
+    body table caption {
+      text-align: right;
+      color: black; }
+    body table tr th {
+      text-align: left; }
+    body table tr th, body table tr td {
+      padding: 8px; }
+    body table tr:first-of-type {
+      background: #e0e0e0;
+      color: black;
+      text-transform: uppercase; }
+      body table tr:first-of-type th:nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
+    body table tr:not(:last-child) td {
+      border-bottom: 1px solid #808080; }
+
+#content {
+  padding: 15px;
+  width: 920px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000; }
+
+.brief {
+  background: #fadcba;
+  color: black;
+  max-width: 390px;
+  margin: 0px 15px 0px 0px;
+  float: left;
+  padding: 15px; }
+
+.img-left {
+  float: left;
+  margin: 0px 15px 10px 0px;
+  border: 3px solid #893c00; }
+
+.img-right {
+  float: right;
+  margin: 0px 0px 10px 15px;
+  border: 3px solid #893c00; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form label {
+    margin: 10px 0 5px 0;
+    color: #808080; }
+  form input:not([type="button"]) {
+    border: 1px solid #808080;
+    height: 25px; }
+  form textarea {
+    border: 1px solid #808080; }
+  form input[type="button"] {
+    margin: 20px 0 20px 0;
+    width: 230px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    background: #ffffff;
+    border: 1px solid #3d70a1;
+    color: #3d70a1; }
+  form .wrapper {
+    display: flex; }
+    form .wrapper .block-name {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    form .wrapper .block-indent {
+      width: 10px; }
+    form .wrapper .block-surname {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+
+/*# sourceMappingURL=style1.css.map */

@@ -1,0 +1,145 @@
+@mixin imgStyle($imgFloat, $imgMargin) {
+    float: $imgFloat;
+    margin: $imgMargin;
+    border: 3px solid $imgBorderColor;
+}
+
+@mixin formBorderColor($borderColor) {
+    input:not([type="button"]) {
+        border: 1px solid $borderColor;
+        height: 25px;
+    }
+    textarea {
+        border: 1px solid $borderColor;
+    }
+}
+
+body {
+    background: $bodyBackgroundColor;
+
+    h1 {
+        color: $headlineColor;
+        text-transform: $headlineOneTextTransform;
+        text-align: center; 
+    }
+
+    h2 {
+        color: $headlineColor;
+    }
+
+    a {
+        color: $linkColor;
+    }
+
+    table {
+        border-collapse: collapse;
+        background: $tableBackgroundColor;
+        border-bottom: $tableBorderBottom;
+        margin-bottom: 50px;
+
+        caption {
+            text-align: right;
+            color: black;
+        }
+        
+        tr {
+            
+            th {
+                text-align: left; 
+            }
+
+            th, td {
+                padding: 8px;
+            }
+            
+            &:first-of-type {
+                background: $tableHeaderSectionColor;
+                color: black;
+                text-transform: uppercase;
+
+                th:nth-child(2) {
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                }
+
+            }
+
+            &:not(:last-child) {
+                td {
+                    border-bottom: 1px solid $tableBorderColor;
+                }
+            }
+            
+        }
+    }
+
+}
+
+#content {
+    padding: 15px;
+    width: 920px;
+    margin: 0 auto;
+    background-color: $contentBackgroundColor;
+    color: $textColor;
+}
+
+.brief {
+    background: $briefBackgroundColor;
+    color: black;
+    max-width: $briefWidth;
+    margin: $briefMargin;
+    float: $briefFloat;
+    padding: 15px;
+}
+
+.img-left {
+    @include imgStyle(left, 0px 15px 10px 0px);
+}
+
+.img-right {
+    @include imgStyle(right, 0px 0px 10px 15px)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        margin: 10px 0 5px 0;
+        color: $inputHeadingColor;
+    }
+
+    @include formBorderColor($inputBorderColor);
+
+    input[type="button"] {
+        margin: 20px 0 20px 0;
+        width: 230px;
+        height: 40px;
+
+        border: none;
+        font-size: 20px;
+        background: $buttonBackground;
+        border: 1px solid $buttonBorderColor;
+        color: $buttonTextColor;
+    }
+
+    .wrapper {
+        display: flex;
+        
+        .block-name {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .block-indent {
+            width: 10px;
+        }
+
+        .block-surname {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

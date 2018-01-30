@@ -1,0 +1,91 @@
+body {
+  background: rgba(198, 238, 252, 0.53); }
+  body h1 {
+    color: #fccd10;
+    text-transform: uppercase;
+    text-align: center; }
+  body h2 {
+    color: #fccd10; }
+  body a {
+    color: #fccd10; }
+  body table {
+    border-collapse: collapse;
+    background: #677d01;
+    border-bottom: 0px solid #94a34e;
+    margin-bottom: 50px; }
+    body table caption {
+      text-align: right;
+      color: black; }
+    body table tr th {
+      text-align: left; }
+    body table tr th, body table tr td {
+      padding: 8px; }
+    body table tr:first-of-type {
+      background: #94a34e;
+      color: black;
+      text-transform: uppercase; }
+      body table tr:first-of-type th:nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
+    body table tr:not(:last-child) td {
+      border-bottom: 1px solid #94a34e; }
+
+#content {
+  padding: 15px;
+  width: 920px;
+  margin: 0 auto;
+  background-color: #3b3b3b;
+  color: #ffffff; }
+
+.brief {
+  background: #fff178;
+  color: black;
+  max-width: 100%;
+  margin: 0px 0px 30px 0px;
+  float: none;
+  padding: 15px; }
+
+.img-left {
+  float: left;
+  margin: 0px 15px 10px 0px;
+  border: 3px solid #f5c70f; }
+
+.img-right {
+  float: right;
+  margin: 0px 0px 10px 15px;
+  border: 3px solid #f5c70f; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form label {
+    margin: 10px 0 5px 0;
+    color: #fccd10; }
+  form input:not([type="button"]) {
+    border: 1px solid #677d01;
+    height: 25px; }
+  form textarea {
+    border: 1px solid #677d01; }
+  form input[type="button"] {
+    margin: 20px 0 20px 0;
+    width: 230px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    background: #3b3b3b;
+    border: 1px solid #fccd10;
+    color: #fccd10; }
+  form .wrapper {
+    display: flex; }
+    form .wrapper .block-name {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    form .wrapper .block-indent {
+      width: 10px; }
+    form .wrapper .block-surname {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+
+/*# sourceMappingURL=style2.css.map */
