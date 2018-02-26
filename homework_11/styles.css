@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+    padding-left: 15px;
+}
+
+p {
+    display: flex;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+p:hover {
+    background: rgb(245,245,245);
+    cursor: pointer;
+}
+
+span {
+    margin-left: 5px;
+}
+
+#root {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+/*icon (folder color)*/
+.material-icons.folder {
+    color: gold;
+}
+
+/*icon (file color)*/
+.material-icons.file {
+    color: gray;
+    opacity: 0.3;
+}
